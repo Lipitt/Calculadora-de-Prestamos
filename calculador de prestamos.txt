@@ -1,0 +1,7 @@
+dinero
+interes
+a�os
+
+pago mensual = (dinero + ((dinero x interes) / 100)) / (a�os * 12)
+pago total = pago mensual * (a�os * 12)
+interes total = pago mensual - dinero

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/15112e41d3.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Calculadora de prestamos</title>
+    <style>
+      #loading{
+        display: none;
+      }
+      #resultados{
+        display: none;
+      }
+    </style>
+  </head>
+  <body class="bg-dark">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 mx-auto">
+          <div id="main-card" class="card card-body text-center mt-5">
+            <h1 class="heading display-5 pb-3">Calculadora de Préstamos</h1>
+            <form id="prestamo-form">
+              <div class="form-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">$</span>
+                  <input
+                    id="prestamo"
+                    type="number"
+                    class="form-control"
+                    placeholder="Monto del préstamo"
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">%</span>
+                  <input
+                    id="interes"
+                    type="number"
+                    class="form-control"
+                    placeholder="Interés"
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-group">
+                  <input
+                    id="año-devol"
+                    type="number"
+                    class="form-control"
+                    placeholder="Años de Devolución"
+                  />
+                </div>
+              </div>
+              <button
+                id="btn-calcular"
+                type="submit"
+                class="btn btn-primary btn-dark btn-block mx-auto"
+              >
+                Calcular
+              </button>
+              
+            </form>
+            <div id="loading">
+            <img src="img/loading.gif"></img>
+            </div>
+            <div id="resultados" class="pt-4">
+              <h5>Resultados</h5>
+
+              <div class="form-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">Pago Mensual</span>
+                  <input
+                    id="pago-mensual"
+                    type="number"
+                    class="form-control"
+                    disabled
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">Monto a Pagar</span>
+                  <input
+                    id="monto-a-pagar"
+                    type="number"
+                    class="form-control"
+                    disabled
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">Interés Total</span>
+                  <input
+                    id="interes-total"
+                    type="number"
+                    class="form-control"
+                    disabled
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
